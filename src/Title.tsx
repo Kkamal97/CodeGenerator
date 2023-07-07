@@ -1,25 +1,25 @@
 import { range } from "lodash";
-import React, { useState } from "react";
+import  { useState } from "react";
 import LowerPage from "./LowerPage";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 // ADDED BY (kk) [2023-05-10]:, 
 function Title (){
-    const [arr1,setArr1]=useState([]);
-    const [constValue,setConstValue]=useState(1);
+    const [arr1,setArr1]=useState<any>();
+    const [constValue,setConstValue]=useState<any>();
    const [linkBar1,setLinkBar1]=useState("")
    const [linkBar2,setLinkBar2]=useState("")
-let vari1;
-let vari2;
-let vari3;
-let vari4;
+let vari1:string;
+let vari2:number;
+let vari3:number;
+let vari4:number;
 
-function handleChange1 (e){ 
+function handleChange1 (e:any){ 
     vari1=e.target.value
 console.log("yaar checkkrle",  vari1);
 }
-function handleChange2 (e){ vari2=+(e.target.value)}
-function handleChange3 (e){ vari3=+(e.target.value)}
-function handleChange4 (e){ vari4=+(e.target.value)}
+function handleChange2 (e:any){ vari2=+(e.target.value)}
+function handleChange3 (e:any){ vari3=+(e.target.value)}
+function handleChange4 (e:any){ vari4=+(e.target.value)}
 
 function handleSubmit(){
 const jolo=range(vari2,vari3,vari4);
@@ -29,19 +29,18 @@ console.log("tik tik kole",jolo );
 
 }
 
-function chikling(){
+// function chikling(){
 
-    arr1.map(function (items){
+//     arr1.map(function (items){
 
-    })
-}
-const handleLink=()=>{
-    console.log("chik chik click ho giya");
-}
+//     })
+// }
+// const handleLink=()=>{
+//     console.log("chik chik click ho giya");
+// }
 
     return <>
-    <p>this is title bar   </p>
-    <div className="flex flex-col items-start text-xs justify-center">
+       <div className="flex flex-col items-start text-xs justify-center">
         <div>
     <input id="constantValue" onChange={handleChange1} placeholder="Constant" className="border border-gray-300 rounded-md p-2 m-3"></input>
     <label htmlFor="constantValue">CONSTANT VALUE</label>

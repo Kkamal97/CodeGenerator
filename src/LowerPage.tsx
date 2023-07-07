@@ -1,9 +1,15 @@
-import React from "react";
+
 import { Route, Routes } from "react-router-dom";
 import QRGenerator from "./QRGenerator";
 import BarGenerator from "./BarGenerator";
+import { FC } from "react";
 // ADDED BY (kk) [2023-06-05]:, 
-function LowerPage ({arr1,constValue}){
+type LowerPageProps = {
+    arr1:any,
+    constValue:any
+}
+
+const  LowerPage:FC<LowerPageProps>=({arr1,constValue})=>{
 
     return <>
     <Routes>

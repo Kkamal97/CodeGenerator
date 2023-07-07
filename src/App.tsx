@@ -1,8 +1,5 @@
-import { useState } from 'react'
 import Title from './Title'
-import Page from './Page'
-import BottomBar from './BottomBar'
-import ProductDisplay from './ProductDisplay'
+
 
 function App() {
   
