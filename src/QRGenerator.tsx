@@ -1,5 +1,5 @@
 import {FC} from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useSearchParams } from "react-router-dom";
 // ADDED BY (kk) [2023-06-05]:, 
 
 type QRGeneratorProps = {
@@ -11,6 +11,11 @@ const  QRGenerator: FC <QRGeneratorProps>=({arr1,constValue})=>{
 
 const ur1=useParams();
 console.log("ur1 QR ke andar ",ur1);
+
+
+const kk1=useSearchParams();
+console.log("kk1 ke andar ka params",kk1);
+
     return <>
 
     {arr1 && arr1.map(function(item:any){
