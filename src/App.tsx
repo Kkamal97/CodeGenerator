@@ -1,17 +1,19 @@
+import {useState} from "react";
+
 import Title from './Title'
 
 //git push ke backup ke liye
 function App() {
-  
+
+  let [stringArray,setStringArray]=useState([]);
+
+
 
   return (
-    <>
-    {/* <ProductDisplay /> */}
-    <Title></Title>
-    {/* <Page></Page>
-    <BottomBar></BottomBar>
-    <h1 className='text-indigo-700'>Hello world</h1> */}
-    </>
+    <div className='flex flex-row'>
+    <Title stringArray={stringArray} setStringArray={setStringArray}/>
+    
+    </div>
   )
 }
 
