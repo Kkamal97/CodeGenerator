@@ -1,20 +1,14 @@
-import {useState} from "react";
+import TopNavBar from "./TopNavBar";
+import RoutesPage from "./RoutesPage";
 
-import Title from './Title'
 
-//git push ke backup ke liye
 function App() {
 
-  let [stringArray,setStringArray]=useState([]);
-
-
-
-  return (
-    <div className='flex flex-row'>
-    <Title stringArray={stringArray} setStringArray={setStringArray}/>
+  return (<>
+   <TopNavBar />
+   <RoutesPage />
     
-    </div>
-  )
+ </> )
 }
 
 export default App
