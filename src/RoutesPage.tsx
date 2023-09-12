@@ -1,4 +1,4 @@
-import React, { FC,useState } from 'react'
+import  { FC,useState } from 'react'
 import { Route,Routes } from 'react-router-dom'
 import About from './About';
 import Title from './Title';
