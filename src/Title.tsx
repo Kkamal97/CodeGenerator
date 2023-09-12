@@ -55,10 +55,8 @@ setStringArray(jolo);
 onClick={(e:any)=>{setQRClicked(e.target.checked)}}
 className="border border-gray-600 mx-2 px-2 "  />
 <label htmlFor="QRCode">QR Code</label>
-</div>   
-
-
-    <button onClick={handleSubmit} className="mt-2 border border-gray-500 w-24 rounded-md self-center bg-green-800 bg-green-200">Push</button>
+</div> 
+ <button onClick={handleSubmit} className="mt-2 border border-gray-500 w-24 rounded-md self-center bg-green-800">Push</button>
     </div>
    
 <CodeField stringArray={stringArray} barClicked={barClicked} QRClicked={QRClicked} /> 
