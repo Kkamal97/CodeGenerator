@@ -12,7 +12,7 @@ const CodeField: FC<CodeFieldProps> = ({stringArray,barClicked,QRClicked  }) => 
      {stringArray.map(function (items){
       return(<div key={items} className='flex flex-row'>
             {barClicked &&  <img src={"https://barcode.tec-it.com/barcode.ashx?data="  + items} 
-             className={"ml-3 my-6 h-12  object-fill " +
+             className={"ml-3 my-4 h-12  object-fill " +
           ((items.length>12) ? "w-40" : ((items.length>6) ? "w-32" : ((items.length>2) ? "w-24" : "w-16")))
               }/> }
 {QRClicked && <div className='flex flex-row items-center'>
