@@ -1,12 +1,10 @@
-import  { FC } from 'react';
+
 import logo from "./logo.png";
 import { Link } from 'react-router-dom';
 import {FaUserAlt}from "react-icons/fa";
-interface TopNavBarProps {
-  
-}
 
-const TopNavBar: FC<TopNavBarProps> = ({  }) => {
+
+const TopNavBar= () => {
   return (
     <div className='bg-green-300 flex flex-row items-center'>
         <img src={logo} className='h-8 mr-3'/>

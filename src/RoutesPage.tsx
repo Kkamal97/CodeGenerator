@@ -6,7 +6,7 @@ import Home from './Home';
 
 
 
-const RoutesPage= ({  }) => {
+const RoutesPage= () => {
     let [stringArray,setStringArray]=useState([]);
   return (
     <div className='flex flex-row'>

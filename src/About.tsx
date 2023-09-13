@@ -1,11 +1,8 @@
-import  { FC } from 'react'
+
 import { Link } from 'react-router-dom';
 
-interface AboutProps {
-  
-}
 
-const About: FC<AboutProps> = ({  }) => {
+const About =() => {
   return (<>
     <div className='font-sans'>
      This Page is using BarCodes from barcode.tec-it
