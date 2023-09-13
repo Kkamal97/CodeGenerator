@@ -1,14 +1,12 @@
-import  { FC,useState } from 'react'
+import  { useState } from 'react'
 import { Route,Routes } from 'react-router-dom'
 import About from './About';
 import Title from './Title';
 import Home from './Home';
 
-interface RoutesPageProps {
-  
-}
 
-const RoutesPage: FC<RoutesPageProps> = ({  }) => {
+
+const RoutesPage= () => {
     let [stringArray,setStringArray]=useState([]);
   return (
     <div className='flex flex-row'>
